@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação segura na internet</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mini_navbar.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+            <button class="bar"></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./introducao.html">Conteúdo</a></li>
+                <li><a href="./manual.html">Manual de Segurança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+        <div class="nav-bar" id="nav-bar">
+            <a href="introducao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Introdução</div>
+            </a>
+            <a href="./classif_riscos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Classif. dos Riscos</div>
+            </a>
+            <a href="procedimentos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+            </a>
+            <a href="protecaoDispositivos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dispositivos</div>
+            </a>
+            <a href="./seguranca_redes.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+            </a>
+            <a href="protecao_dados_pessoais.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dados</div>
+            </a>
+            <a href="navegacao_segura.html" class="nav-link">
+                <div class="nav-item active" onclick="activateTab(this)">Nav. Segura na net.</div>
+            </a>
+            <a href="./backup.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Backup e Recup.</div>
+            </a>
+            <a href="./conclusao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+            </a>
+        </div>
+        <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="titulo">Navegação Segura na Internet</h1>
+
+            <div class="conteudo1">
+                <div class="conteudo">
+                    <img src="https://rgainfo.com/2021/wp-content/uploads/2021/06/206578594_4125389900877303_2612925522101372110_n-1024x1024.jpg"
+                        alt="Imagem">
+                </div>
+                <div class="conteudo">
+                    <h2>Navegação na Internet</h2>
+                    <p>Priorizar a segurança da navegação na internet garante a proteção do seu dispositivo e dados.
+                        Embora os cibercriminosos geralmente visem grupos específicos para golpes, há algumas dicas
+                        universais sobre como se proteger</p>
+                </div>
+            </div>
+
+
+            <div class="conteudo2">
+                <h2>Aqui está a nossa lista com as 10 principais regras e dicas de segurança na internet para todos:
+                    <h2>
+            </div>
+
+            <ul class="lista">
+                <li>
+                    <strong>Verifique se os sites são seguros</strong> Verifique se os sites que você acessa têm um
+                    certificado SSL e usam o protocolo de segurança “https”, que é criptografado (o "http" não
+                    é).Essa é apenas uma etapa que pode ajudar a evitar golpes como o spoofing
+                </li>
+                <li>
+                    <strong>Instale as atualizações de software mais recentes</strong> Cibercriminosos estão
+                    constantemente encontrando novos vetores de ataque. As atualizações de software mais recentes
+                    para seu dispositivo e aplicativos ajudam a corrigir riscos e vulnerabilidades de segurança.
+                </li>
+                <li>
+                    <strong>Faça backup de seus dados</strong> No caso de um ataque de malware ou falha do
+                    dispositivo, talvez seja necessário formatar o aparelho. O backup dos seus dados em um
+                    dispositivo de armazenamento externo e na nuvem pode ser um salva-vidas
+                </li>
+                <li>
+                    <strong>Atenção às notícias falsas</strong> Sites de fake news podem roubar informações pessoais
+                    ou espalhar malwares. Preste atenção à ortografia das URLs. Esses sites geralmente usam
+                    “tiposquatting”, em que um domínio tem praticamente a mesma aparência ao endereço de uma marca
+                    legítima, talvez com uma letra a mais
+                </li>
+                <li>
+                    <strong>Use um gerenciador de senhas</strong> É difícil manter o controle de tantas senhas, mas
+                    não se comprometa tornando-as mais simples. Use um gerenciador de senhas para atualizar e
+                    armazenar as credenciais de acesso à conta.
+                </li>
+                <li>
+                    <strong>Use a 2FA</strong> Com a autenticação de dois fatores (2FA), você usa dois métodos para
+                    acessar uma conta. Se sua senha for roubada, sua conta protegida por 2FA permanecerá segura e
+                    privada.
+                </li>
+                <li>
+                    <strong>Use uma VPN</strong> Você ainda está se perguntando se realmente precisa de uma VPN? A
+                    resposta é sim. Uma VPN garante seu anonimato ao ocultar seu endereço IP e atividades online
+                </li>
+                <li>
+                    <strong>Use um antivírus confiável</strong> EO Windows Defender é suficiente para proteger seu
+                    dispositivo? Em alguns casos, talvez. Mas nada se compara aos antivírus modernos, que são
+                    atualizados para proteger os usuários contra as ameaças mais recentes.
+                </li>
+                <li>
+                    <strong>Evite anexos ou links suspeitos</strong> Links e anexos não seguros podem levar ao roubo
+                    de dados ou infecções por malwares. E-mails falsos ou sites maliciosos podem parecer muito
+                    convincentes, portanto, pense duas vezes antes de clicar em qualquer coisa.
+                </li>
+            </ul>
+
+            <div class="links">
+                <a href="protecao_dados_pessoais.html" class="seta seta-esquerda">&#8592;</a>
+                <a href="backup.html" class="seta seta-direita">&#8594;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html">
+                <div class="footer-logo">
+                    <img src="./img/logo_cyber.png" alt="Logo">
+                </div>
+            </a>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./manual.html">Manual</a>
+            </div>
+            <div class="footer-links">
+                <a href="./introducao.html">Introdução a segurança digital</a>
+                <a href="./classif_riscos.html">Classificação dos riscos</a>
+                <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+                <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+                <a href="./seguranca_redes.html">Segurança em Redes</a>
+            </div>
+            <div class="footer-links">
+                <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+                <a href="./navegacao_segura.html">Navegação segura na internet</a>
+                <a href="./backup.html">Backup e recuperação de dados</a>
+                <a href="./conclusao.html">Conclusão</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>

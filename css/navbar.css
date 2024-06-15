@@ -1,0 +1,156 @@
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header {
+    background-color: #1940C6;
+    padding-inline: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Para garantir que o header fique sobre outros elementos */
+}
+
+.nav {
+    max-width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    /* Centraliza o conteúdo dentro do header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    /* Remove margens padrão do ul */
+    padding: 0;
+    /* Remove padding padrão do ul */
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.nav-list a:hover {
+    color: #FFD700;
+    /* Change to desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarge the link */
+}
+
+.hero {
+    height: calc(100vh - 80px);
+    /* Ajusta altura da hero para compensar o header */
+    background: center / cover no-repeat url("./bg.jpg");
+}
+
+.bar {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.bar::after,
+.bar::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .bar {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #235CED;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .bar {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .bar::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .bar::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

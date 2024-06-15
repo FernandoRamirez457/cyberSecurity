@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteção de dados pessoais</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mini_navbar.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+            <button class="bar"></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./introducao.html">Conteúdo</a></li>
+                <li><a href="./manual.html">Manual de Segurança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+        <div class="nav-bar" id="nav-bar">
+            <a href="introducao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Introdução</div>
+            </a>
+            <a href="./classif_riscos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Classif. dos Riscos</div>
+            </a>
+            <a href="procedimentos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+            </a>
+            <a href="protecaoDispositivos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dispositivos</div>
+            </a>
+            <a href="./seguranca_redes.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+            </a>
+            <a href="protecao_dados_pessoais.html" class="nav-link">
+                <div class="nav-item active" onclick="activateTab(this)">Prot. de Dados</div>
+            </a>
+            <a href="navegacao_segura.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Nav. Segura na net.</div>
+            </a>
+            <a href="./backup.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Backup e Recup.</div>
+            </a>
+            <a href="./conclusao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+            </a>
+        </div>
+        <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="titulo">Proteção de Dados Pessoais</h1>
+
+            <div class="conteudo1">
+                <div class="conteudo">
+                    <img src="https://bonnjur.com.br/wp-content/uploads/2023/06/lei-geral-de-protecao-de-dados-pessoais.jpg"
+                        alt="Imagem">
+                </div>
+                <div class="conteudo">
+                    <h2>Definições e Conceitos:</h2>
+                    <p>São informações relacionadas a uma pessoa física identificada ou identificável. Exemplos incluem
+                        nome, endereço, número de telefone, e-mail, endereço IP, dados de localização, entre outros.</p>
+                    <h2><strong>Dados Sensíveis:</strong></h2>
+                    <p>São categorias especiais de dados que exigem maior proteção, como informações sobre origem racial
+                        ou étnica, opiniões políticas, convicções religiosas, dados genéticos ou biométricos, saúde,
+                        vida sexual e orientação sexual.</p>
+                </div>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Legislações Principais</h2>
+                <p><strong>Regulamento Geral sobre a Proteção de Dados (GDPR):</strong> Implementado pela União Europeia
+                    em 2018, o GDPR é uma das legislações mais rigorosas sobre proteção de dados, aplicando-se a todas
+                    as empresas que processam dados pessoais de indivíduos na UE, independentemente de onde a empresa
+                    esteja localizada.</p>
+                <p><strong>Lei Geral de Proteção de Dados Pessoais (LGPD):</strong> A LGPD é a legislação brasileira
+                    equivalente ao GDPR, em vigor desde setembro de 2020. Regula o tratamento de dados pessoais por
+                    indivíduos e organizações no Brasil.</p>
+                <p><strong>California Consumer Privacy Act (CCPA):</strong> Implementada na Califórnia, EUA, em 2020, a
+                    CCPA dá aos residentes da Califórnia mais controle sobre suas informações pessoais.</p>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Princípios da Proteção de Dados</h2>
+                <ul>
+                    <li><strong>Legalidade, Lealdade e Transparência:</strong> Os dados devem ser processados de maneira
+                        legal, justa e transparente.</li>
+                    <li><strong>Limitação de Finalidade:</strong> Os dados devem ser coletados para finalidades
+                        específicas, explícitas e legítimas.</li>
+                    <li><strong>Minimização de Dados:</strong> A coleta de dados deve ser limitada ao que é necessário
+                        em relação às finalidades para as quais são processados.</li>
+                    <li><strong>Precisão:</strong> Os dados devem ser precisos e, quando necessário, atualizados.</li>
+                    <li><strong>Limitação de Armazenamento:</strong> Os dados devem ser mantidos em uma forma que
+                        permita a identificação dos titulares de dados por no máximo o tempo necessário para as
+                        finalidades do processamento.</li>
+                    <li><strong>Integridade e Confidencialidade:</strong> Os dados devem ser processados de maneira
+                        segura, protegendo-os contra processamento não autorizado ou ilegal, perda acidental, destruição
+                        ou dano.</li>
+                </ul>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Direitos dos Titulares de Dados</h2>
+                <ul>
+                    <li><strong>Direito de Acesso:</strong> Direito de saber quais dados estão sendo processados e para
+                        qual finalidade.</li>
+                    <li><strong>Direito de Retificação:</strong> Direito de corrigir dados incorretos ou incompletos.
+                    </li>
+                    <li><strong>Direito ao Apagamento (Direito de Ser Esquecido):</strong> Direito de ter os dados
+                        apagados em determinadas circunstâncias.</li>
+                    <li><strong>Direito à Portabilidade dos Dados:</strong> Direito de receber os dados em um formato
+                        estruturado, comumente usado e legível por máquina, e transmiti-los a outro controlador.</li>
+                    <li><strong>Direito à Restrição do Processamento:</strong> Direito de limitar o processamento dos
+                        dados.</li>
+                    <li><strong>Direito de Oposição:</strong> Direito de se opor ao processamento dos dados em
+                        determinadas situações.</li>
+                </ul>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Desafios na Proteção de Dados</h2>
+                <ul>
+                    <li><strong>Conformidade Regulatória:</strong> Adaptação às diferentes legislações e regulamentações
+                        em várias jurisdições.</li>
+                    <li><strong>Cibersegurança:</strong> Proteção contra violações de dados e ataques cibernéticos.</li>
+                    <li><strong>Gestão de Consentimento:</strong> Garantir que o consentimento seja obtido de forma
+                        clara e inequívoca.</li>
+                    <li><strong>Transferência Internacional de Dados:</strong> Garantir a proteção de dados transferidos
+                        para fora das fronteiras nacionais.</li>
+                    <li><strong>Anonimização e Pseudonimização:</strong> Técnicas para proteger dados pessoais enquanto
+                        ainda são úteis para análise.</li>
+                </ul>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Tendências e Futuro da Proteção de Dados</h2>
+                <ul>
+                    <li><strong>Tecnologias de Privacidade:</strong> Desenvolvimento de novas tecnologias para melhorar
+                        a proteção de dados, como criptografia avançada e blockchain.</li>
+                    <li><strong>Privacidade por Design:</strong> Integração de medidas de proteção de dados desde o
+                        início do desenvolvimento de produtos e serviços.</li>
+                    <li><strong>Inteligência Artificial e Proteção de Dados:</strong> Endereçar os desafios e
+                        oportunidades que a IA apresenta para a privacidade e proteção de dados.</li>
+                    <li><strong>Aumento da Conscientização Pública:</strong> Maior educação e conscientização sobre os
+                        direitos de privacidade e proteção de dados.</li>
+                    <li><strong>Regulamentações Globais Harmonizadas:</strong> Esforços para criar padrões globais
+                        harmonizados para a proteção de dados.</li>
+                </ul>
+                <p>Este panorama fornece uma visão geral da complexidade e da importância da proteção de dados pessoais
+                    na sociedade contemporânea, destacando a necessidade de uma abordagem robusta e contínua para
+                    garantir a privacidade e a segurança dos indivíduos.</p>
+            </div>
+
+            <div class="links">
+                <a href="seguranca_redes.html" class="seta seta-esquerda">&#8592;</a>
+                <a href="navegacao_segura.html" class="seta seta-direita">&#8594;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html">
+                <div class="footer-logo">
+                    <img src="./img/logo_cyber.png" alt="Logo">
+                </div>
+            </a>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./manual.html">Manual</a>
+            </div>
+            <div class="footer-links">
+                <a href="./introducao.html">Introdução a segurança digital</a>
+                <a href="./classif_riscos.html">Classificação dos riscos</a>
+                <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+                <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+                <a href="./seguranca_redes.html">Segurança em Redes</a>
+            </div>
+            <div class="footer-links">
+                <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+                <a href="./navegacao_segura.html">Navegação segura na internet</a>
+                <a href="./backup.html">Backup e recuperação de dados</a>
+                <a href="./conclusao.html">Conclusão</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backup e recuperação de dados</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/mini_navbar.css" />
+  <link rel="stylesheet" href="./css/conteudo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+      <button class="bar"></button>
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./introducao.html">Conteúdo</a></li>
+        <li><a href="./manual.html">Manual de Segurança</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="nav-container">
+    <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+    <div class="nav-bar" id="nav-bar">
+      <a href="introducao.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Introdução</div>
+      </a>
+      <a href="./classif_riscos.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Classif. dos Riscos</div>
+      </a>
+      <a href="procedimentos.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+      </a>
+      <a href="protecaoDispositivos.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Prot. de Dispositivos</div>
+      </a>
+      <a href="./seguranca_redes.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+      </a>
+      <a href="protecao_dados_pessoais.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Prot. de Dados</div>
+      </a>
+      <a href="navegacao_segura.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Nav. Segura na net.</div>
+      </a>
+      <a href="./backup.html" class="nav-link">
+        <div class="nav-item active" onclick="activateTab(this)">Backup e Recup.</div>
+      </a>
+      <a href="./conclusao.html" class="nav-link">
+        <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+      </a>
+    </div>
+    <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1 class="titulo">
+        Backup e recuperação de dados: como fazer backup e recuperar
+      </h1>
+
+      <div class="conteudo1">
+        <div class="conteudo">
+          <img src="img/backup.png" alt="Imagem" />
+        </div>
+        <div class="conteudo">
+          <h2>O Que é?</h2>
+          <p>
+            Backup é uma cópia de segurança dos seus dados de um dispositivo
+            de armazenamento (celulares, tablets, computadores) ou sistema
+            (aplicativos, softwares e jogos) para outro ambiente para que eles
+            possam ser restaurados se você perdeu as informações originais,
+            trocou de aparelho, entre outros casos
+          </p>
+        </div>
+      </div>
+
+      <div class="conteudo2">
+        <h2>Onde fazer o backup</h2>
+        <p>
+          Antes de tudo, escolha onde a sua cópia ficará salva. Você tem duas
+          opções: Backup em mídia física Como exemplos de mídias físicas e
+          removíveis estão os discos rígidos externos (HDs), CDs e pen drives.
+          Você não deve fazer backup de arquivos de um computador, por
+          exemplo, no mesmo HD em que o seu Windows está instalado. Se optar
+          por mídia física, armazene-a em um lugar seguro para evitar que
+          pessoas não autorizadas tenham acesso aos arquivos. Você também pode
+          considerar criptografar dados e fazê-lo com periodicidade para
+          mantê-lo atualizado.
+        </p>
+      </div>
+      <br /><br />
+      <div class="conteudo2">
+        <h2>Backup em nuvem</h2>
+        <p>
+          A cópia de segurança na nuvem, também conhecida como cloud backup,
+          leva seus dados para um servidor remoto, ao qual você pode acessar
+          pela Internet. Basicamente, você usa o espaço de armazenamento de
+          outro computador. Há vários serviços de nuvem domésticos e gratuitos
+          como Google Drive, Dropbox, iCloud, Box, OneDrive e outras soluções
+          pagas e mais robustas para empresas. Dependendo do espaço que você
+          precisar, 15 GB podem ser mais que suficientes. É recomendado, ao
+          fazer em nuvem, usar uma rede Wi-Fi, já que arquivos de podem
+          consumir muitos dados móveis (se estiver usando um smartphone) e,
+          possivelmente, gerar custos adicionais ou acabar com o seu pacote de
+          dados. Um dos benefícios do armazenamento em nuvem de backups é o de
+          poder acessar os seus arquivos a qualquer hora e em qualquer lugar,
+          além de compartilhar arquivos com outras pessoas usando a facilidade
+          de um link para fazer isso.
+        </p>
+      </div>
+      <br /><br />
+
+      <ul class="lista">
+        <h2>
+          Exemplos de backup<br /><br />
+          Há alguns backups mais comuns no nosso dia a dia. Veja como funciona
+          alguns deles:
+          <br />
+          <br />
+        </h2>
+        <li>
+          <strong>Backup do WhatsApp:</strong> No WhatsApp, você pode fazer
+          uma cópia de segurança das suas conversas e arquivos de mídia para o
+          Google Drive (Android) ou iCloud (iPhone) e transferilos caso troque
+          de celular. Esse backup pode ser atualizado periodicamente e
+          automaticamente
+        </li>
+        <br />
+        <li>
+          <strong>Backup de fotos e vídeos:</strong> A maneira mais simples de
+          trabalhar com backup de fotos e vídeos no celular é usando o Google
+          Fotos. Todas as fotos que você tira com a câmera do seu celular
+          ficam salvas na sua conta do Google. Basta sincronizar e as
+          alterações serão refletidas em todos os dispositivos. Se você
+          costuma usar o iCloud para armazenar seus arquivos, não tem
+          problema: é possível migrar suas fotos e vídeos para o serviço do
+          Google. O armazenamento gratuito é ilimitado para fotos em “alta
+          qualidade” até 16 MP (as fotos são compactadas para economizar
+          espaço. Se uma foto for maior que 16 MP, ela será redimensionada, o
+          mesmo com vídeos com mais de 1080p).
+        </li>
+        <br />
+        <li>
+          <strong>Backup do iPhone:</strong> Se você usa iOS, saiba que o
+          backup fica armazenado no iCloud, o serviço de nuvem da Apple.
+          Manter uma cópia de segurança é importante se você quer se preparar
+          para atualizar ou restaurar o aparelho.
+        </li>
+        <br />
+        <li>
+          <strong>Backup do Windows:</strong> O tipo de cópia de segurança que
+          você vai fazer, vai depender da versão do Windows. O backup manual é
+          recomendado no caso de versões mais recentes. Nele, você escolhe e
+          transfere arquivos e configurações em uma mídia removível ou um
+          local de rede. Para uma versão mais antiga, use o Centro de Backup e
+          Restauração do próprio Windows.
+        </li>
+        <br />
+        <li>
+          <strong>Softwares de Backup:</strong> Tanto para Windows quanto para
+          macOS você vai encontrar softwares que auxiliam no processo de
+          backup, além dos assistentes nativos de cada um desses sistemas
+          operacionais. Mas o que eles fazem além de auxiliar no backup? Como
+          diferencial e incremental, oferecem criptografia, automatização,
+          agendamento, sincronização com nuvem e com vários dispositivos. Há
+          versões pagas mais completas
+        </li>
+      </ul>
+
+      <br />
+      <br />
+      <div class="conteudo2">
+        <h2>
+          Fazer backup ou restaurar dados no dispositivo Android
+          <br />
+          <br />
+          <h3>Fazer backup automático do smartphone</h3>
+          <br />
+        </h2>
+        <p>
+          Importante: para proteger seus dados salvos em backup, use um PIN,
+          padrão ou senha.<br /><br />
+          Você pode configurar seu dispositivo para fazer backup dos seus
+          arquivos automaticamente.<br /><br />
+
+          1. Abra o app "Configurações" do dispositivo.<br />
+          2. Selecione Google Backup.<br />
+          Dica: se essa é a primeira vez que você faz isso, ative o Backup do
+          Google One e siga as instruções na tela.<br />
+          3. Toque em Fazer backup agora.<br /><br />
+          O backup do Google One pode levar até 24 horas para ser concluído.
+          Quando seus dados forem salvos, a mensagem "Ativado" vai aparecer
+          abaixo dos tipos de dados selecionados.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="conteudo2">
+        <h2>
+          Fazer backup manual de dados e Configurações
+          <br />
+        </h2>
+        <p>
+          1. Abra o app Configurações do smartphone<br />
+          2. Toque em Google Backup.<br />
+          Se essas etapas não corresponderem às configurações do seu
+          smartphone, pesquise a opção backup no app Configurações ou peça
+          ajuda ao fabricante do dispositivo.
+          <br />
+          3. Toque em Fazer backup agora.<br /><br />
+
+          Seja qual for o backup que você precisa fazer, siga as instruções
+          dos links de tutoriais e guarde cópia física ou em armazenamento em
+          nuvem de todos seus os arquivos, evitando a perda dos arquivos
+          originais e criando chance de recuperação dos dados. Uma ótima dica
+          é trabalhar com backup automático e agendar cópias periódicas.
+        </p>
+      </div>
+
+      <div class="links">
+        <a href="navegacao_segura.html" class="seta seta-esquerda">&#8592;</a>
+        <a href="conclusao.html" class="seta seta-direita">&#8594;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <a href="./index.html">
+        <div class="footer-logo">
+          <img src="./img/logo_cyber.png" alt="Logo">
+        </div>
+      </a>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="./manual.html">Manual</a>
+      </div>
+      <div class="footer-links">
+        <a href="./introducao.html">Introdução a segurança digital</a>
+        <a href="./classif_riscos.html">Classificação dos riscos</a>
+        <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+        <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+        <a href="./seguranca_redes.html">Segurança em Redes</a>
+      </div>
+      <div class="footer-links">
+        <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+        <a href="./navegacao_segura.html">Navegação segura na internet</a>
+        <a href="./backup.html">Backup e recuperação de dados</a>
+        <a href="./conclusao.html">Conclusão</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>

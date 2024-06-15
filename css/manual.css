@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.banner-manual {
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    background: url('../img/barra_azul_top.png') no-repeat bottom center/cover;
+    color: white;
+}
+
+.text-banner {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-banner h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.text-banner p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.banner-img {
+    height: 600px;
+}
+
+.introduction-manual {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding: 0 18%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+.introduction-manual h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction-manual p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.manual-information {
+    width: 100%;
+    height: 600px;
+    background: url(../img/barra_azul_lateral.png) no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-manual {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.manual-img {
+    height: 550px;
+}
+
+.text-manual h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.text-manual p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text-manual button {
+    width: 300px;
+    height: 50px;
+    background-color: #00AFEF;
+    border: 2px solid #009BD4;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text-manual button:hover {
+    background-color: #009BD4;
+    transform: scale(1.05);
+}
+
+.img-manual {
+    height: 650px;
+}
+
+@media (max-width: 600px) {
+    .banner-manual {
+        height: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-banner {
+        width: 80%;
+    }
+
+    .text-banner h1 {
+        font-size: 50px;
+    }
+
+    .text-banner p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .banner-img {
+        width: 98%;
+        height: auto;
+    }
+
+    .introduction-manual {
+        height: 500px;
+        padding: 0 5%;
+    }
+
+    .introduction-manual h2 {
+        font-size: 22px;
+    }
+
+    .introduction-manual p {
+        font-size: 14px;
+    }
+
+    .manual-information {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        background-position: bottom center;
+        background: url(../img/quadrado_azul.png) no-repeat;
+        background-size: 100% 55%;
+        color: white;
+    }
+
+    .text-manual {
+        width: 80%;
+    }
+
+    .manual-img {
+        width: 98%;
+        height: auto;
+    }
+
+    .text-manual h2 {
+        font-size: 22px;
+    }
+
+    .text-manual p {
+        font-size: 14px;
+    }
+
+    .text-manual button {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,70 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 93%;
+    margin-top: 90px;
+}
+
+.nav-bar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 80%;
+    border: 1px solid #cbcbcb;
+
+    /* Remove o design padrão do scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* Remove o design padrão do scroll para WebKit browsers (Chrome, Safari) */
+.nav-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link {
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item {
+    width: 215px;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.nav-item:not(.active) {
+    opacity: 0.5;
+    border: 2px solid #cbcbcb;
+}
+
+.nav-item.active {
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+    opacity: 1;
+}
+
+.nav-item:hover {
+    background-color: #e0e0e0;
+}
+
+.scroll-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.scroll-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

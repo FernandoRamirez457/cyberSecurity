@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*BANNER*/
+.banner-introduction {
+    width: 100%;
+    height: 900px;
+    background: url('../img/barra_azul_top.png') no-repeat bottom center/cover;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-banner {
+    width: 40%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-banner h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.text-banner p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.banner-img {
+    height: 600px;
+}
+
+
+/*INTRODUÇÃO*/
+.base-introduction {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-introduction {
+    height: 600px;
+}
+
+.text-introduction {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-introduction h2 {
+    font-size: 26px;
+}
+
+.text-introduction p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/*INTRODUÇÃO*/
+
+.base-threat {
+    width: 100%;
+    height: 1000px;    
+    background: url(../img/barra_azul.png) no-repeat;
+    background-size: 100% 98%;
+    background-position: left center;
+    padding: 0 18%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.base-threat h2 {
+    font-size: 26px;
+}
+
+.base-threat p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container-icons-threat {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-icons {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.icon-threat {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #5BCBF5;
+}
+
+.icon-threat img{
+    height: 90px;
+    width: 90px;
+}
+
+
+/*CONTEUDO DA PAGINA*/
+
+.base-content-security{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-content h2{
+    font-size: 26px;
+    text-align: left;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text-content button {
+    width: 300px;
+    height: 50px;
+    background-color: #00AFEF;
+    border: 2px solid #009BD4;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text-content button:hover {
+    background-color: #009BD4;
+    transform: scale(1.05);
+}
+
+
+.img-content{
+    height: 650px;
+}
+
+
+/*CONTEUDO DA PAGINA*/
+
+.base-manual-security{
+    width: 100%;
+    height: 900px;
+    background: url(../img/barra_azul_lateral.png) no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-manual{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.text-manual h2{
+    font-size: 26px;
+    text-align: right;
+}
+
+.text-manual p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text-manual button {
+    width: 300px;
+    height: 50px;
+    background-color: #00AFEF;
+    border: 2px solid #009BD4;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text-manual button:hover {
+    background-color: #009BD4;
+    transform: scale(1.05);
+}
+
+.img-manual{
+    height: 650px;
+}
+
+@media (max-width: 600px) {
+    .banner-introduction{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .text-banner{
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-banner h1 {
+        font-size: 50px;
+    }
+
+    .text-banner p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .banner-img{
+        width: 99%;
+        height: auto;
+    }
+
+    .base-introduction{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-introduction{
+        width: 100%;
+    }
+
+    .text-introduction h2 {
+        font-size: 22px;
+    }
+
+    .text-introduction p {
+        font-size: 14px;
+    }
+
+    .img-introduction{
+        display: none;
+    }
+
+    .base-threat {
+        height: 1000px;
+        padding: 0 5%;
+        background-size: 600%;
+    }
+
+    .base-threat h2{
+        font-size: 22px;
+    }
+
+    .base-threat p{
+        font-size: 14px;
+    }
+
+    .container-icons-threat {
+        height: 260px;
+    }
+
+    .row-icons {
+        gap: 20px;
+    }
+
+    .icon-threat {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-threat img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .base-content-security{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        width: 100%;
+        height: auto;
+        margin-top: 400px;
+    }
+
+    .text-content h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-content button {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .img-content{
+        width: 99%;
+        height: auto;
+    }
+
+    .base-manual-security{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        margin-top: 400px;
+        background-size: 400%;
+        gap: 0;
+    }
+
+    .text-manual{
+        width: 100%;
+    }
+
+    .text-manual h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .text-manual p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-manual button {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .img-manual {
+        width: 99%;
+        height: auto;
+    }
+}

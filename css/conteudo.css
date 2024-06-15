@@ -1,0 +1,109 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 100px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    margin-bottom: -100px;
+}
+
+.container p, li{
+    text-align: justify;
+}
+
+.container h2{
+    margin-bottom: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.conteudo1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+.conteudo1 p{
+    width: 90%;
+    font-size: 17px;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 10px;
+}
+
+.conteudo p{
+    width: 100%;
+}
+
+.conteudo img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.conteudo2 {
+    font-size:17px;
+}
+
+.lista {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.lista li{
+    margin-top: 10px;
+}
+
+.seta {
+    position: fixed;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    background-color: #1a51e7;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.seta-esquerda {
+    left: 20px;
+}
+
+.seta-direita {
+    right: 20px;
+}
+
+.links {
+    text-align: center;
+}
+
+.praticas{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: auto;
+        width: 90%;
+        padding: 20px 10px; /* Ajustado o preenchimento para dispositivos menores */
+    }
+
+    .conteudo1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .conteudo1 p {
+        font-size: 16px; /* Reduzindo o tamanho da fonte para dispositivos menores */
+    }
+}

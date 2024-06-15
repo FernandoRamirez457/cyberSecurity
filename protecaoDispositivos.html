@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteção de dispositivos</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mini_navbar.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+            <button class="bar"></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./introducao.html">Conteúdo</a></li>
+                <li><a href="./manual.html">Manual de Segurança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+        <div class="nav-bar" id="nav-bar">
+            <a href="introducao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Introdução</div>
+            </a>
+            <a href="./classif_riscos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Classif. dos Riscos</div>
+            </a>
+            <a href="procedimentos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+            </a>
+            <a href="protecaoDispositivos.html" class="nav-link">
+                <div class="nav-item active" onclick="activateTab(this)">Prot. de Dispositivos</div>
+            </a>
+            <a href="./seguranca_redes.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+            </a>
+            <a href="protecao_dados_pessoais.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dados</div>
+            </a>
+            <a href="navegacao_segura.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Nav. Segura na net.</div>
+            </a>
+            <a href="./backup.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Backup e Recup.</div>
+            </a>
+            <a href="./conclusao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+            </a>
+        </div>
+        <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="titulo">Proteção de dispositivos: medidas para garantir a
+                segurança do dispositivo</h1>
+
+            <div class="conteudo1">
+                <div class="conteudo">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQGvYzHx3GD6HQ/article-cover_image-shrink_720_1280/0/1678063969830?e=2147483647&v=beta&t=VGcVpWFQQ48qofPXo7dEkd7JJNOJYg0--SNht4l0l58"
+                        alt="Imagem">
+                </div>
+                <div class="conteudo">
+                    <h2>Introdução</h2>
+                    <p>A segurança em dispositivos móveis é um tema cada vez mais relevante no
+                        mundo moderno. Com o crescimento do uso de smartphones e tablets, é
+                        fundamental que as pessoas se preocupem em proteger suas informações
+                        pessoais e profissionais armazenadas nesses dispositivos.
+                        Infelizmente, muitos usuários não têm conhecimento sobre as ameaças e os
+                        riscos envolvidos no uso desses dispositivos, o que pode resultar em violações
+                        de privacidade, perda de dados e até mesmo roubo de identidade.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conteudo2">
+                <p>Neste contexto, é essencial que os usuários de dispositivos móveis adotem
+                    medidas preventivas para garantir a segurança de suas informações.
+                    Para isso, reunimos alguns passos que podem ajudar na segurança em
+                    dispositivos móveis contra ameaças cibernéticas.
+                </p>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Mantenha o sistema operacional dos dispositivos móveis protegidos com
+                    as últimas atualizações</h2>
+                <p>Manter o sistema operacional de seus dispositivos móveis atualizado é uma das
+                    medidas mais eficazes para garantir a segurança em dispositivos móveis e a
+                    proteção de suas informações. Aqui estão algumas razões e benefícios para fazer isso:
+                </p>
+            </div>
+
+            <div class="praticas">
+
+                <ol>
+                    <li>
+                        <h3>Correções de Vulnerabilidades:</h3>
+                        <ul>
+                            <li>Fabricantes de dispositivos móveis
+                                frequentemente lançam atualizações para corrigir vulnerabilidades que
+                                foram descobertas desde o último lançamento. Ao atualizar, você garante
+                                que seu dispositivo está protegido contra essas vulnerabilidades
+                                conhecidas</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Melhorias de segurança em dispositivos móveis:</h3>
+                        <ul>
+                            <li>Além de correções de
+                                bugs, as atualizações do sistema operacional muitas vezes vêm com
+                                melhorias de segurança que tornam seu dispositivo mais resistente a novos
+                                tipos de ataques.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Compatibilidade com Novos Aplicativos:</h3>
+                        <ul>
+                            <li>Aplicativos mais recentes
+                                podem exigir versões mais recentes do sistema operacional para funcionar
+                                corretamente. Ao manter seu sistema atualizado, você garante que pode
+                                usar e aproveitar os aplicativos mais recentes e mais seguros disponíveis.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Otimizações de Desempenho:</h3>
+                        <ul>
+                            <li>Atualizações frequentemente incluem
+                                otimizações que fazem seu dispositivo funcionar mais rápido e de maneira
+                                mais eficiente.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Proteção Contra Malware:</h3>
+                        <ul>
+                            <li>Muitos malwares são projetados para explorar
+                                vulnerabilidades em versões mais antigas de sistemas operacionais. Ao
+                                atualizar, você reduz o risco de seu dispositivo ser infectado.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Backup das suas informações:</h3>
+                        <ul>
+                            <li>O backup regular das informações armazenadas em dispositivos móveis é uma
+                                das práticas mais essenciais para garantir a segurança dos dispositivos móveis.
+                                A prevenção contra perda de dados acontece uma vez que dispositivos móveis
+                                estão sujeitos a danos físicos, falhas de software ou até mesmo roubo. Em
+                                qualquer um desses cenários, sem um backup adequado, as informações
+                                armazenadas podem ser perdidas permanentemente.
+                                Na prática, em caso de perda de dados, ter um backup atualizado permite que
+                                você restaure suas informações rapidamente, minimizando interrupções e
+                                garantindo a continuidade de suas atividades diárias</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Busque fontes confiáveis para garantir dispositivos móveis protegidos:</h3>
+                        <ul>
+                            <li>Os marketplaces realizam validações sobre as APPs disponíveis, entretanto, não
+                                são infalíveis. Por exemplo, em novembro de 2017 uma versão fake do WhatsApp
+                                foi baixada mais de 1 milhão de vezes.
+                                Quando se trata de instalar aplicativos em dispositivos móveis, é crucial garantir
+                                que eles sejam baixados de fontes confiáveis.
+                                Aplicativos de fontes não verificadas podem conter malware, que pode
+                                comprometer a segurança do seu dispositivo e roubar suas informações pessoais.
+                                Além disso, alguns aplicativos mal-intencionados podem se disfarçar como
+                                atualizações de aplicativos populares, mas na realidade, são versões falsas que
+                                podem prejudicar seu dispositivo ou roubar seus dados</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Utilize senha na tela de bloqueio:</h3>
+                        <ul>
+                            <li>O bloqueio de tela com senha é uma das primeiras linhas de segurança em
+                                dispositivos móveis. Ele serve como uma barreira inicial contra acessos não
+                                autorizados, protegendo informações, aplicativos e funções do dispositivo de
+                                olhares curiosos ou intenções maliciosas.
+                                Além disso, a senha de bloqueio de tela não é apenas uma medida de segurança
+                                reativa, mas também proativa. Ela desencoraja tentativas de acesso, pois
+                                potenciais invasores sabem que terão que superar essa barreira antes de acessar
+                                qualquer coisa no dispositivo.
+                                Isso pode ser especialmente útil em situações em que o dispositivo é perdido ou
+                                esquecido em um local público.
+                                A tecnologia também evoluiu para oferecer várias formas de bloqueio de tela,
+                                desde senhas alfanuméricas tradicionais e padrões de desenho até biometria,
+                                como impressões digitais e reconhecimento facial.
+                                Essas opções oferecem níveis variados de segurança e conveniência, permitindo
+                                que os usuários escolham o método que melhor se adapte às suas necessidades
+                                e estilo de vida.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Cuidado com exposição da sua tela:</h3>
+                        <ul>
+                            <li>Uma pessoa ao lado ou por cima do ombro pode estar coletando informações de
+                                forma não autorizada, com o agravante da vítima sequer detectar.
+                                Para minimizar este risco pode-se utilizar uma película de privacidade, por
+                                exemplo.
+                                Além da tela, hoje são utilizadas trocas de mensagens por áudio, muitas vezes
+                                “tocadas” em modo viva-voz.
+                                Dessa forma, fica ainda mais fácil obter informações de quem está na conversa.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Manter o antivírus atualizado é essencial para a segurança em
+                            dispositivos móveis</h3>
+                        <ul>
+                            <li>Manter o antivírus atualizado é essencial para a segurança do seu dispositivo
+                                móvel. Com o avanço da tecnologia e a crescente sofisticação dos
+                                cibercriminosos, novos tipos de malware são desenvolvidos e lançados
+                                regularmente.
+                                As atualizações de antivírus são projetadas para combater essas novas ameaças,
+                                adicionando definições de novos malwares à sua base de dados e melhorando os
+                                algoritmos de detecção.
+                                Um antivírus desatualizado pode não reconhecer as ameaças mais recentes,
+                                tornando o dispositivo vulnerável. Em contrapartida, um antivírus atualizado
+                                identifica e neutraliza essas ameaças, protegendo suas informações e o
+                                funcionamento do dispositivo.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Atenção ao utilizar redes de Wi-fi públicos:</h3>
+                        <ul>
+                            <li>As redes Wi-fi públicas, como as encontradas em cafés, aeroportos e praças, são
+                                convenientes, mas muitas vezes não são seguras. Ao se conectar a uma dessas
+                                redes, você pode estar se expondo a diversos riscos.
+                                Primeiramente, essas redes são frequentemente desprotegidas, o que significa
+                                que qualquer pessoa pode acessar os dados que você envia ou recebe enquanto
+                                está conectado. Isso inclui informações sensíveis como senhas, dados bancários
+                                e mensagens pessoais.
+                                Há também o risco de “Man-in-the-Middle” (MitM). Nesse tipo de ataque, o
+                                criminoso se posiciona entre o usuário e a conexão, interceptando e, em alguns
+                                casos, alterando a comunicação entre os dois. Isso pode ser usado para roubar
+                                informações ou inserir malware no dispositivo do usuário.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Configure adequadamente as notificações da tela bloqueada:</h3>
+                        <ul>
+                            <li>As notificações que aparecem na tela bloqueada de um dispositivo móvel podem
+                                ser uma janela para informações pessoais e sensíveis.
+                                Quando aplicativos como e-mails ou redes sociais exibem prévias de suas
+                                mensagens ou notificações na tela bloqueada, isso pode permitir que alguém, com
+                                uma simples olhada, saiba mais sobre suas atividades, compromissos, contatos
+                                ou qualquer outra informação que possa ser exibida.
+                                Além disso, as informações exibidas nas notificações podem ser usadas por
+                                pessoas mal-intencionadas em tentativas de engenharia social ou outros tipos de
+                                ataques.
+                                Quando se trata de segurança em dispositivos móveis, é crucial configurar
+                                adequadamente as notificações na tela bloqueada, limitando a quantidade de
+                                informações exibidas ou desativando completamente as prévias para aplicativos
+                                sensíveis.
+                                Isso garante que suas informações permaneçam privadas e protegidas, mesmo
+                                quando o dispositivo está bloqueado.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Esteja consciente sobre as informações armazenadas nos dispositivos
+                            móveis</h3>
+                        <ul>
+                            <li>Os dispositivos móveis tornaram-se uma extensão de nossas vidas, armazenando
+                                uma vasta quantidade de informações pessoais e profissionais.
+                                Desde fotos e mensagens até documentos de trabalho e dados bancários, esses
+                                dispositivos contêm detalhes que, se caírem nas mãos erradas, podem ter
+                                consequências devastadoras.
+                                É crucial estar ciente do tipo de informação que você mantém em seu smartphone
+                                ou tablet. Algumas informações, como dados sensíveis ou confidenciais, podem
+                                não ser adequadas para armazenamento em um dispositivo que pode ser
+                                facilmente perdido ou roubado.
+                                Estar ciente das informações armazenadas em seus dispositivos móveis não é
+                                apenas uma questão de organização, mas uma etapa fundamental para garantir
+                                dispositivos móveis protegidos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Habilite o recurso de bloqueio e limpeza remoto:</h3>
+                        <ul>
+                            <li>O recurso de bloqueio e limpeza remoto é uma ferramenta essencial para a
+                                segurança de dispositivos móveis. Ele permite que os usuários bloqueiem seus
+                                dispositivos à distância, tornando-os inacessíveis para qualquer pessoa que os
+                                encontre ou tente usá-los sem permissão.
+                                Além do bloqueio, a funcionalidade de limpeza remota permite que os usuários
+                                apaguem todos os dados do dispositivo, garantindo que informações sensíveis
+                                não caiam nas mãos erradas. Isso é crucial, pois, em muitos casos, a informação
+                                contida no dispositivo pode ser mais valiosa do que o próprio aparelho.
+                                Em cenários extremos, pode ser mais benéfico para o usuário garantir que seus
+                                dados sejam completamente apagados, mesmo que isso signifique perder o
+                                acesso ao dispositivo, do que arriscar a exposição desses dados a entidades
+                                malintencionadas.</li>
+                        </ul>
+                    </li>
+
+                    <div class="conteudo2">
+                        <p>Seguindo esses procedimentos detalhados, uma organização pode efetivamente responder a uma
+                            violação de dados, minimizar danos e proteger informações sensíveis, enquanto garante a
+                            conformidade com regulamentações e reforça a sua postura de segurança.</p>
+                    </div>
+            </div>
+
+            <div class="links">
+                <a href="procedimentos.html" class="seta seta-esquerda">&#8592;</a>
+                <a href="seguranca_redes.html" class="seta seta-direita">&#8594;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html">
+                <div class="footer-logo">
+                    <img src="./img/logo_cyber.png" alt="Logo">
+                </div>
+            </a>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./manual.html">Manual</a>
+            </div>
+            <div class="footer-links">
+                <a href="./introducao.html">Introdução a segurança digital</a>
+                <a href="./classif_riscos.html">Classificação dos riscos</a>
+                <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+                <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+                <a href="./seguranca_redes.html">Segurança em Redes</a>
+            </div>
+            <div class="footer-links">
+                <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+                <a href="./navegacao_segura.html">Navegação segura na internet</a>
+                <a href="./backup.html">Backup e recuperação de dados</a>
+                <a href="./conclusao.html">Conclusão</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>

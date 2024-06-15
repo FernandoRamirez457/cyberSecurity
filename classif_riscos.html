@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de riscos</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mini_navbar.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+            <button class="bar"></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./introducao.html">Conteúdo</a></li>
+                <li><a href="./manual.html">Manual de Segurança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+        <div class="nav-bar" id="nav-bar">
+            <a href="introducao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Introdução</div>
+            </a>
+            <a href="./classif_riscos.html" class="nav-link">
+                <div class="nav-item active" onclick="activateTab(this)">Classif. dos Riscos</div>
+            </a>
+            <a href="procedimentos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+            </a>
+            <a href="protecaoDispositivos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dispositivos</div>
+            </a>
+            <a href="./seguranca_redes.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+            </a>
+            <a href="protecao_dados_pessoais.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dados</div>
+            </a>
+            <a href="navegacao_segura.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Nav. Segura na net.</div>
+            </a>
+            <a href="./backup.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Backup e Recup.</div>
+            </a>
+            <a href="./conclusao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+            </a>
+        </div>
+        <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="titulo">Classificação de riscos</h1>
+
+            <div class="conteudo1">
+                <div class="conteudo">
+                    <img src="https://hsclabs.com/wp-content/uploads/2018/04/Riscos-Seguranca-da-Informacao.png"
+                        alt="Imagem">
+                </div>
+                <div class="conteudo">
+                    <h2>Introdução</h2>
+                    <p>Com o avanço constante da tecnologia e a crescente interconexão digital,
+                        as ameaças cibernéticas representam um desafio significativo para empresas e organizações em
+                        todo o mundo.
+                        Entre os métodos mais comuns de ataque estão os anexos de e-mail maliciosos e a exploração de
+                        vulnerabilidades remotamente.
+                        Estes ataques podem resultar em infecções por malware, comprometendo a segurança dos dados e a
+                        integridade dos sistemas.
+                        Neste artigo, exploraremos essas ameaças e discutiremos soluções eficazes para mitigar seus
+                        impactos, destacando a importância da filtragem de e-mails,
+                        educação dos usuários, atualização de software e a implementação de sistemas de prevenção de
+                        intrusões.
+                </div>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Anexos de E-mail Maliciosos</h2>
+                <p>Os anexos de e-mail contendo código malicioso são uma forma comum de
+                    infecção. Quando um usuário desavisado abre o anexo, o malware é
+                    executado e pode se espalhar ainda mais através de e-mails encaminhados
+                    ou compartilhamento de arquivos na rede.
+                </p>
+            </div>
+
+            <ul class="lista">
+                <li>
+                    <strong>Exploração de Vulnerabilidades Remotamente</strong> Hackers exploram vulnerabilidades em
+                    sistemas desatualizados ou mal
+                    configurados para obter acesso remoto. Esses ataques podem ser lançados
+                    de qualquer lugar do mundo, muitas vezes sem a necessidade de interação
+                    do usuário.
+
+                </li>
+                <li>
+                    <strong>Soluções Eficazes:</strong> Malware, phishing, ransomware e outros tipos de ataques
+                    representam sérias ameaças à segurança digital, exigindo medidas de proteção eficazes.
+                </li>
+            </ul>
+            <div class="conteudo2">
+                <h2>Soluções Eficazes:</h2>
+            </div>
+            <ul class="lista">
+                <li>
+                    <strong>Filtragem de E-mails e Educação dos Usuários</strong>
+                    Filtragem de E-mails: Implementar um gateway de e-mail seguro que filtra emails de phishing e
+                    detecta anexos suspeitos. Ferramentas como o Proofpoint
+                    e o Barracuda podem ajudar a bloquear e-mails maliciosos antes que eles
+                    cheguem aos usuários.
+                    Educação dos Usuários: Treinar os funcionários para identificar e-mails de
+                    phishing e evitar abrir anexos de fontes desconhecidas. Programas de
+                    treinamento contínuos ajudam a manter os usuários alertas sobre as ameaças
+                    mais recentes.
+                </li>
+                <li>
+                    <strong>Atualização de Software e Sistemas de Prevenção de Intrusões (IPS)</strong>
+                    Atualização e Patching: Manter todos os sistemas e softwares atualizados com
+                    os últimos patches de segurança para corrigir vulnerabilidades conhecidas.
+                    Ferramentas como o WSUS (Windows Server Update Services) ou soluções de
+                    gerenciamento de patches podem automatizar esse processo.
+                    Sistema de Prevenção de Intrusões (IPS): Utilizar um IPS para detectar e
+                    prevenir ataques monitorando o tráfego de rede e bloqueando tentativas de
+                    exploração. Soluções como o Snort ou o Palo Alto Networks IPS são eficazes
+                    para identificar e mitigar atividades maliciosas.
+                </li>
+                <p>
+                    <strong>Resumo:</strong>
+                <p><strong>Ataques Comuns:</strong></p>
+                <p>Anexos de e-mail maliciosos.</p>
+                <p>Exploração de vulnerabilidades remotamente.</p>
+                <p>Soluções Eficazes:</p>
+
+                <p>Filtragem de e-mails e educação dos usuários.</p>
+                <p>Atualização de software e sistemas de prevenção de intrusões (IPS).</p>
+                <p>A implementação dessas soluções pode reduzir significativamente o risco de</p>
+                <p>infecção por malware e proteger a rede e os dados da organização contra</p>
+                <p>ataques comuns.</p>
+
+                </li>
+            </ul>
+            <div class="links">
+                <a href="introducao.html" class="seta seta-esquerda">&#8592;</a>
+                <a href="procedimentos.html" class="seta seta-direita">&#8594;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html">
+                <div class="footer-logo">
+                    <img src="./img/logo_cyber.png" alt="Logo">
+                </div>
+            </a>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./manual.html">Manual</a>
+            </div>
+            <div class="footer-links">
+                <a href="./introducao.html">Introdução a segurança digital</a>
+                <a href="./classif_riscos.html">Classificação dos riscos</a>
+                <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+                <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+                <a href="./seguranca_redes.html">Segurança em Redes</a>
+            </div>
+            <div class="footer-links">
+                <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+                <a href="./navegacao_segura.html">Navegação segura na internet</a>
+                <a href="./backup.html">Backup e recuperação de dados</a>
+                <a href="./conclusao.html">Conclusão</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>

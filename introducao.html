@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a segurança digital</title>
+    <link rel="stylesheet" href="./css/mini_navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"><img src="./img/logo_cyber.png" alt="" class="logo"></a>
+            <button class="bar"></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./introducao.html">Conteúdo</a></li>
+                <li><a href="./manual.html">Manual de Segurança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <button class="scroll-btn" id="scroll-left" onclick="buttonScrollLeft()">&lt;</button>
+        <div class="nav-bar" id="nav-bar">
+            <a href="introducao.html" class="nav-link">
+                <div class="nav-item active" onclick="activateTab(this)">Introdução</div>
+            </a>
+            <a href="./classif_riscos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Classif. dos Riscos</div>
+            </a>
+            <a href="procedimentos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Proced. Caso de Viol.</div>
+            </a>
+            <a href="protecaoDispositivos.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dispositivos</div>
+            </a>
+            <a href="./seguranca_redes.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Segurança em Redes</div>
+            </a>
+            <a href="protecao_dados_pessoais.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Prot. de Dados</div>
+            </a>
+            <a href="navegacao_segura.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Nav. Segura na net.</div>
+            </a>
+            <a href="./backup.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Backup e Recup.</div>
+            </a>
+            <a href="./conclusao.html" class="nav-link">
+                <div class="nav-item" onclick="activateTab(this)">Conclusão</div>
+            </a>
+        </div>
+        <button class="scroll-btn" id="scroll-right" onclick="buttonScrollRight()">&gt;</button>
+    </div>
+
+
+    <main>
+        <div class="container">
+            <h1 class="titulo">Introdução à Segurança Digital</h1>
+
+            <div class="conteudo1">
+                <div class="conteudo">
+                    <img src="https://www.cisco.com/c/pt_br/products/security/what-is-cybersecurity/jcr:content/Grid/subcategory_atl/layout-subcategory-atl/anchor_info_9e63.img.jpg/1652765781721.jpg"
+                        alt="Imagem">
+                </div>
+                <div class="conteudo">
+                    <h2>O Que é?</h2>
+                    <p>A segurança digital, uma disciplina em constante evolução, foca na proteção de sistemas,
+                        redes e dados contra uma variedade de ameaças cibernéticas. À medida que o mundo se torna
+                        cada vez mais interconectado, a importância de salvaguardar informações pessoais,
+                        corporativas e infraestruturas críticas se torna primordial. Este campo abrange uma vasta
+                        gama de práticas e tecnologias destinadas a identificar, mitigar e responder a incidentes de
+                        segurança, garantindo a integridade, confidencialidade e disponibilidade dos dados.
+                </div>
+            </div>
+
+            <div class="conteudo2">
+                <h2>Exemplos e Aplicações?</h2>
+                <p>Neste contexto, explorar os principais aspectos da segurança digital é essencial para compreender
+                    as complexidades envolvidas e adotar as melhores práticas para proteção contra ciberataques.
+                    Discutiremos conceitos fundamentais, tecnologias emergentes, e estratégias eficazes,
+                    exemplificando boas e melhores práticas que são cruciais para manter um ambiente digital seguro:
+                </p>
+            </div>
+
+            <ul class="lista">
+                <li>
+                    <strong>Importância da Segurança Digital:</strong> A crescente dependência da tecnologia e o
+                    aumento das ameaças cibernéticas tornam a segurança digital uma prioridade para indivíduos e
+                    organizações.
+                </li>
+                <li>
+                    <strong>Ameaças Cibernéticas:</strong> Malware, phishing, ransomware e outros tipos de ataques
+                    representam sérias ameaças à segurança digital, exigindo medidas de proteção eficazes.
+                </li>
+                <li>
+                    <strong>Proteção de Dados:</strong> Criptografia e práticas de segurança de dados são essenciais
+                    para proteger informações confidenciais contra acesso não autorizado.
+                </li>
+                <li>
+                    <strong>Segurança de Rede:</strong> Firewalls, sistemas de detecção de intrusões e outras
+                    medidas ajudam a proteger redes de computadores contra acessos não autorizados e ataques.
+                </li>
+                <li>
+                    <strong>Segurança de Dispositivos:</strong> Instalação de software antivírus, atualizações de
+                    segurança e outras medidas são necessárias para proteger computadores, smartphones e outros
+                    dispositivos contra malware.
+                </li>
+                <li>
+                    <strong>Gestão de Identidade e Acesso:</strong> Implementação de práticas de autenticação forte
+                    e proteção de credenciais de usuário são fundamentais para evitar acessos não autorizados.
+                </li>
+                <li>
+                    <strong>Conscientização e Educação em Segurança:</strong> Educar os usuários sobre práticas de
+                    segurança, como criar senhas seguras e identificar phishing, é crucial para reduzir riscos.
+                </li>
+                <li>
+                    <strong>Governança de Segurança:</strong> Estabelecer políticas de segurança robustas e garantir
+                    a conformidade regulatória são aspectos essenciais da governança de segurança.
+                </li>
+                <li>
+                    <strong>Resposta a Incidentes:</strong> Planos de resposta a incidentes ajudam as organizações a
+                    lidar de forma eficaz com violações de segurança e emergências cibernéticas.
+                </li>
+                <li>
+                    <strong>Testes de Segurança:</strong> Realizar testes regulares, como testes de penetração e
+                    varreduras de vulnerabilidade, ajuda a identificar e corrigir falhas de segurança.
+                </li>
+                <li>
+                    <strong>Segurança na Nuvem:</strong> Desafios e melhores práticas para garantir a segurança de
+                    dados em ambientes de computação em nuvem são fundamentais para proteger informações críticas.
+                </li>
+                <li>
+                    <strong>Internet das Coisas (IoT):</strong> A segurança dos dispositivos IoT é essencial para
+                    proteger redes e dados contra ameaças cibernéticas em um mundo cada vez mais conectado.
+                </li>
+                <li>
+                    <strong>Tendências e Desafios Futuros:</strong> A evolução tecnológica traz novas tendências e
+                    desafios, como inteligência artificial e segurança quântica, que exigem uma abordagem proativa
+                    para garantir a segurança digital.
+                </li>
+            </ul>
+
+            <div class="links">
+                <a href="classif_riscos.html" class="seta seta-direita">&#8594;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html">
+                <div class="footer-logo">
+                    <img src="./img/logo_cyber.png" alt="Logo">
+                </div>
+            </a>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./manual.html">Manual</a>
+            </div>
+            <div class="footer-links">
+                <a href="./introducao.html">Introdução a segurança digital</a>
+                <a href="./classif_riscos.html">Classificação dos riscos</a>
+                <a href="./procedimentos.html">Procedimentos em caso de violação</a>
+                <a href="./protecaoDispositivos.html">Proteção de dispositivos</a>
+                <a href="./seguranca_redes.html">Segurança em Redes</a>
+            </div>
+            <div class="footer-links">
+                <a href="./protecao_dados_pessoais.html">Proteção de dados pessoais</a>
+                <a href="./navegacao_segura.html">Navegação segura na internet</a>
+                <a href="./backup.html">Backup e recuperação de dados</a>
+                <a href="./conclusao.html">Conclusão</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_conteudo.js"></script>
+</body>
+
+</html>
